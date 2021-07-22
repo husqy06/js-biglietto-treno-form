@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Biglietto-Treno</title>
+</head>
+<body>
+    <div class="wrap">
+
+        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        <div class="container">
+
+            <div class="input-container">
+                <!-- input per nome e cognome -->
+                <div class="label-input">
+                    <label for="nome">Nome Cognome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Inserisci il tuo nome">
+                </div>
+                
+                <!-- input per km  -->
+                <div class="label-input">
+                    <label for="km">Km da percorrere</label>
+                    <input type="number" name="km" id="km" placeholder="Inserisci Km">
+                </div>
+
+                <!-- input per eta' -->
+                <div class="label-input">
+                    <label for="eta">fascia d'et&agrave;</label>
+                    <select name="eta" id="eta">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button id="btn">Genera</button>
+                <button>Annulla</button>
+            </div>
+        </div>
+
+        <h2>IL TUO BIGLIETTO</h2>
+        <div class="container-2">
+            <h3>DETTAGLIO PASSEGGERI</h3>
+            <div class="ticket">
+                <div class="passenger-name">
+                    <h3>NOME PASSEGGERO</h3>
+                </div>
+                <div class="ticket-item">
+                    <h4>Offerta</h4>
+                    <span id="offer">Biglietto standard</span>
+                </div>
+                <div class="ticket-item">
+                    <h4>Carrozza</h4>
+                    <span id="carriage">Biglietto standard</span>
+                </div>
+                <div class="ticket-item">
+                    <h4>Codice CP</h4>
+                    <span id="codex">Biglietto standard</span>
+                </div>
+                <div class="ticket-item">
+                    <h4>Costo biglietto</h4>
+                    <span id="price">Biglietto standard</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
