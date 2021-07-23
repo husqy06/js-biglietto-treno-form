@@ -22,7 +22,7 @@
 .container-2 {
     background-color: white;
     width: 70%;
-    height: 23%;
+    height: 30%;
     margin: 20px;
 }
 /* / common */
@@ -109,6 +109,7 @@ button:active {
 .container-2 {
     padding: 20px;
     color: black;
+    display: none;
 }
 
 .ticket {
@@ -123,10 +124,12 @@ button:active {
     background-color: gray;
     width: 220px;
     height: 100%;
-    padding: 20px 10px;
+    padding: 10px;
     text-align: center;
 }
-
+#name-ticket {
+    margin-top: 10px;
+}
 .ticket-item {
     height: 100%;
     margin: 0 0 0 25px;
